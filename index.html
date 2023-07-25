@@ -8,80 +8,47 @@
 <body>
     <nav>
         <img src="images/logo.jpg">
-            <table style="width: 100%;">
-                <thead>
-                    <ul>
-                        <th><a href="inicio.html">Inicio</a></th>
-                        <th><a href="comidas.html">Comidas</a></th>
-                        <th><a href="contactos.html">Contacto</a></th>
-                    </ul>   
-                </thead>
-            </table>  
+        <ul>
+            <a href="#inicio">Inicio</a>
+            <a href="#comidas">Comidas</a>
+            <a href="#contactos">Contacto</a>
+        </ul>   
     </nav>
-    <main >
-        <h1 style="background-color: burlywood; text-align: center;" >Bienvenidos al restaurante 2plati-yos</h1>
-        <p style="background-color: blanchedalmond;" >Disfruta de una amplia variedad gastronómica, hecha a la medida de cada comensal. Ofrecemos un servicio de comida nacional e internacional. Contamos con menú infnatil, vegano, dietático y más. Nuestras instalaciones son confrtables, modernas y con excelente iluminación.</p>
-        <p style="background-color: bisque;">Visítanos ahora y disfruta de la mejor comida de la zona.</p>
-        
-        <div>
-            <center><img style="width: 1000px" src="images/interior_restaurante.jpg"></center>
-        </div>
-
-        <div style="text-align: center; background-color: cornflowerblue;">
-            <img src="images/menu.png" style="width: 2%;">
-            <Label for="menu" style="font-size: xx-large;">Menú principal</Label> <br>
-           
-            <select name="menu" id="">
-                <option disabled selected value="0m">Menú</option>
-                <option value="1m">Paella mar y tierra</option>
-                <option value="2m">Fidegua</option>
-                <option value="3m">Pasticho</option>
-                <option value="4m">Pizzas</option>
-                <option value="5m">Hamburguesas</option>
-                <option value="6m">Choripanes</option>
-                <option value="7m">Parilla Argentina</option>
-                <option value="8m">Pinchos de pollo y carne</option>
-                <option value="9m">Alistas BBQ</option>
-            </select><br>
-        </div>
-        <div style="text-align: center; background-color: blueviolet;">
-            <img src="images/infantil.png" style="width: 2%;">
-            <Label for="infantil" style="font-size: xx-large;">Menú infantil</Label> <br>
-            <select name="infantil" id="">
-                <option disabled selected value="0i">Infantil</option>
-                <option value="1i">Cajita feliz</option>
-                <option value="2i">Pollo frito con papas</option>
-                <option value="3i">Pasta con carne</option>
-                <option value="4i">Pizzas margarita</option>
-                <option value="5i">Hamburguesas</option>
-            </select><br>
-        </div>
-        <div style="text-align: center; background-color: brown;">
-            <img src="images/postres.png" style="width: 2%;">
-            <Label for="postres" style="font-size: xx-large;">Postres</Label> <br>
-            <select name="postres" id="">
-                <option disabled selected value="0p">Postres</option>
-                <option value="1p">Brownie con helado</option>
-                <option value="2p">Barquillas de dos sabores</option>
-                <option value="3p">Quesillo de chocolate</option>
-                <option value="4p">Torta tres leches</option>
-                <option value="5p">Pie de limón</option>
-            </select><br>
-        </div>      
+    <main id="inicio">
+        <h1>Bienvenidos al restaurante 2plati-yos</h1>
+        <p>Disfruta de una amplia variedad gastronómica, hecha a la medida de cada comensal. Ofrecemos un servicio de comida nacional e internacional. Contamos con menú infnatil, vegano, dietático y más. Nuestras instalaciones son confrtables, modernas y con excelente iluminación.</p>
+        <p>Visítanos ahora y disfruta de la mejor comida de la zona.</p>  
     </main>
-    <footer>
-        <FONT COLOR="red"><p style="font-size: 20px; text-align: center; background-color: black;">Déjanos tus datos en el siguiente formulario para recibir promociones y actualizaciones del restaurante</p></FONT>
-        <center>
+    <section id="comidas">
+        <img style="width: 1000px" src="images/interior_restaurante.jpg">
+        <h1>Menú del restaurante</h1>
+        <ul>
+            <li>
+                <h3>Parrilla</h3>
+                <img src="images/parrilla.jpg" style="width: 20%;">
+            </li>
+            <li>
+                <h3>Pasta</h3>
+                <img src="images/pasta.jpg" style="width: 20%;">
+            </li>
+            <li>
+                <h3>Ensalada de camarones</h3>
+                <img src="images/ensalada_camarones.jpg" style="width: 20%;">
+            </li>
+        </ul>
+    </section>
+    <footer id="contactos">
+        <p>Déjanos tus datos en el siguiente formulario para recibir promociones y actualizaciones del restaurante</p>
             <form action="menu_formulario.html">
-                <label>Nombre
+                <label for="nombre" >Nombre</label>
                     <input type="text" name="nombre" id="">
-                </label><br>
-                <label>Apellido
-                    <input type="text" name="apellido" id="">
-                </label><br>
-                <label>Email
+                <br>
+                <label for=" apellido">Apellido
+                    <input type="text" name="apellido" id=""></label>
+                <br>
+                <label for="email">Email</label>
                     <input type="email" name="email" id="">
-                </label><br><br>
+                <br><br>
                     <input type="submit" value="Suscribirse"><br>
             </form>
                
@@ -97,7 +64,6 @@
                     </tr>
                 </table>
             </div>
-        </center>
     </footer>
 </body>
 </html>
